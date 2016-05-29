@@ -14,9 +14,11 @@ SPI GPIO 10 & 11
 Adafruit Servo/PWM Pi Hat on I2C - [Shop](https://www.adafruit.com/product/2327)
 
 Rotary Encoder + Switch - [Shop](https://www.adafruit.com/products/377)<br>
-GPIO 14, 15, 23
+GPIO 14, 15, 23 (Change to 17, 27, 22 to prevent collision with TXD, TXD)
 
 2 Solid State Relay<br>
 GPIO 12 & 16
 
 16x02 LCD Display with I2C backpack (Used Adafruit backpack before but installed it in [another project](https://github.com/Emprint/GreenhouseBot) so this one is using a cheaper pack (6$ with postage) that works very well as well but require [another library](https://gist.github.com/DenisFromHR/cc863375a6e19dce359d)
+
+Note to myself, use [Bob Rathbone](http://www.bobrathbone.com/raspberrypi/Raspberry%20Rotary%20Encoders.pdf) class instead of Pi Gaugette for rotary encoder, as the last one is giving non consistent results and I suppose Bob's one with events will work better
